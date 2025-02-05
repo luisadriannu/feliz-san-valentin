@@ -112,7 +112,7 @@ export const TuEresMiSanValentin = () => {
         transition={{ duration: 0.8 }}
         className="relative flex flex-col items-center justify-center h-full text-white text-center font-bold text-shadow"
       >
-        <h2 className="text-4xl font-bold">Gracias mi niña hermosa💟</h2>
+        <h2 className="text-4xl font-bold">Gracias mi niña hermosa💘</h2>
 
         <p className="text-lg pt-6 w-80">
           No sabes lo feliz que me hace saber que compartiremos ese día tan
