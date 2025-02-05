@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  font-family: "Raleway", serif;
+}
+
 .text-shadow {
   /* text-shadow: 3px 0px 4px #000000; */
   text-shadow: 6px 0px 4px rgba(0, 0, 0, 0.25);
