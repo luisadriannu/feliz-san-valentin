@@ -42,7 +42,7 @@ function Home() {
           <p className="text-lg md:text-4xl w-80 md:w-full mt-4">
             <span className="text-purple-300">Abi</span>, desde el fondo de mí
             corazón y en este día tan especial que hoy cumplimos 1 año y 1
-            mesesitos tengo que decirte algo... ¿Quieres saber lo que es?👉👈
+            mesesito tengo que decirte algo... ¿Quieres saber lo que es?👉👈
           </p>
 
           {show ? null : (
