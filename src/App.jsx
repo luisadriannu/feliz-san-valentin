@@ -8,9 +8,12 @@ import {
 import { motion } from "framer-motion";
 import { TeAmoAbigail } from "./pages/TeAmoAbigail";
 import { TuEresMiSanValentin } from "./pages/TuEresMiSanValentin";
+import batman from "./assets/img/quieres-ser-mi-sanvalentin.jpg";
+import { useState } from "react";
 
 function Home() {
   const navigate = useNavigate();
+  const [show, setShow] = useState(false);
 
   return (
     <>
@@ -38,27 +41,59 @@ function Home() {
           </h1>
           <p className="text-lg w-80 mt-4">
             <span className="text-purple-300">Abi</span>, desde el fondo de mí
-            corazón tengo que decirte algo... ¿Quieres saber lo que es?
+            corazón y en este día tan especial que hoy cumplimos 1 año y 1
+            mesesitos tengo que decirte algo... ¿Quieres saber lo que es?👉👈
           </p>
 
-          <motion.button
-            initial={{ scale: 1 }}
-            animate={{
-              scale: [1, 1.1, 1],
-            }}
-            transition={{
-              duration: 0.8,
-              repeat: Infinity,
-              repeatType: "loop",
-              ease: "easeInOut",
-            }}
-            onClick={() => navigate("/teAmoAbigail")}
-            className="mt-6 cursor-pointer bg-purple-500 text-white p-4 rounded-lg w-50 translate-y-2 hover:bg-purple-400 transition"
-          >
-            ¡Siii me encantaría!🍓
-          </motion.button>
+          {show ? null : (
+            <motion.button
+              initial={{ scale: 1 }}
+              animate={{
+                scale: [1, 1.1, 1],
+              }}
+              transition={{
+                duration: 0.8,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+              onClick={() => {
+                setShow(true);
+              }}
+              className="mt-6 cursor-pointer bg-purple-500 text-white p-4 rounded-lg w-50 translate-y-2 hover:bg-purple-400 transition"
+            >
+              ¡Siii me encantaría!🍓
+            </motion.button>
+          )}
         </motion.div>
       </motion.div>
+
+      {show ? (
+        <>
+          <div className="w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <motion.img
+              className="w-full h-full"
+              initial={{ scale: 0.2 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 2, ease: "easeOut" }}
+              src={batman}
+              alt="Quieres ser mi san valentin"
+            ></motion.img>
+
+            <motion.button
+              initial={{ scale: 0.2 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 1.8, ease: "easeOut" }}
+              onClick={() => {
+                navigate("/teAmoAbigail");
+              }}
+              className="absolute top-2 left-1/2 -translate-x-1/2 cursor-pointer bg-black text-white p-4 rounded-lg w-50 translate-y-2 hover:bg-gray-800transition font-bold"
+            >
+              Acepto💞
+            </motion.button>
+          </div>
+        </>
+      ) : null}
     </>
   );
 }
