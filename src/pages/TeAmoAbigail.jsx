@@ -26,7 +26,7 @@ export const TeAmoAbigail = () => {
         transition={{ duration: 0.8 }}
         className="relative flex flex-col items-center justify-center h-full text-white text-center font-bold text-shadow"
       >
-        <h2 className="text-red-200 text-4xl pb-6">Abigail💖</h2>
+        <h2 className="text-red-200 text-4xl md:text-8xl pb-6">Abigail💖</h2>
         <motion.span
           className="text-5xl absolute bottom-7 right-5 rotate-12"
           initial={{ scale: 1 }}
@@ -73,15 +73,15 @@ export const TeAmoAbigail = () => {
           </svg>
         </motion.span>
 
-        <p className="font-bold text-lg pt-4">
+        <p className="font-bold text-lg md:text-6xl pt-4">
           Me concederias el honor de ser mi <br />
           <span className="text-pink-400 text-4xl">¿San Valentín?</span>
         </p>
-        <p className="pt-6 mx-auto w-80">
+        <p className="pt-6 md:text-4xl mx-auto w-80 md:w-full">
           No vas a ser espectadora, cada día a tu lado es un regalo y este San
           Valentín quiero que sea aún más especial...
         </p>
-        <p className="pt-2">Me encantaría compartirlo contigo.</p>
+        <p className="pt-2 md:text-4xl">Me encantaría compartirlo contigo.</p>
         <motion.button
           initial={{ scale: 1 }}
           animate={{
@@ -94,7 +94,7 @@ export const TeAmoAbigail = () => {
             ease: "easeInOut",
           }}
           onClick={() => navigate("/tuEresMiSanValentin")}
-          className="shadow mt-4 cursor-pointer bg-[#cf94af] text-white p-4 rounded-lg w-50 translate-y-2"
+          className="shadow mt-4 md:text-lg cursor-pointer bg-[#cf94af] text-white p-4 rounded-lg w-50 translate-y-2"
         >
           Por supuesto😻
         </motion.button>

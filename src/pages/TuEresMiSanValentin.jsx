@@ -112,11 +112,14 @@ export const TuEresMiSanValentin = () => {
         transition={{ duration: 0.8 }}
         className="relative flex flex-col items-center justify-center h-full text-white text-center font-bold text-shadow"
       >
-        <h2 className="text-4xl font-bold">Gracias mi niña hermosa💘</h2>
+        <h2 className="text-4xl md:text-8xl font-bold">
+          Gracias mi niña hermosa💘
+        </h2>
 
-        <p className="text-lg pt-6 w-80">
+        <p className="text-lg pt-6 w-80 md:w-full md:text-4xl">
           No sabes lo feliz que me hace saber que compartiremos ese día tan
-          especial <span className="text-amber-300 text-xl">uwu</span>
+          especial{" "}
+          <span className="text-amber-300 text-xl md:text-6xl">uwu</span>
         </p>
 
         <motion.a
@@ -130,7 +133,7 @@ export const TuEresMiSanValentin = () => {
             repeatType: "loop",
             ease: "easeInOut",
           }}
-          className="shadow mt-4 cursor-pointer bg-yellow-500 text-white p-4 rounded-lg w-50 translate-y-2 flex justify-center gap-1"
+          className="shadow mt-4 cursor-pointer bg-yellow-500 text-white p-4 rounded-lg w-50 translate-y-2 flex justify-center gap-1 md:text-lg"
           href="https://wa.me/7298936043?text=Teamo❤"
           target="_blank"
           rel="noreferer"

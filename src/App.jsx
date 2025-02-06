@@ -36,10 +36,10 @@ function Home() {
           transition={{ duration: 0.8 }}
           className="relative flex flex-col items-center justify-center h-full text-white text-center font-bold text-shadow"
         >
-          <h1 className="text-4xl">
+          <h1 className="text-4xl md:text-8xl">
             Buen día <br /> preciosa flor🌷
           </h1>
-          <p className="text-lg w-80 mt-4">
+          <p className="text-lg md:text-4xl w-80 md:w-full mt-4">
             <span className="text-purple-300">Abi</span>, desde el fondo de mí
             corazón y en este día tan especial que hoy cumplimos 1 año y 1
             mesesitos tengo que decirte algo... ¿Quieres saber lo que es?👉👈
@@ -60,7 +60,7 @@ function Home() {
               onClick={() => {
                 setShow(true);
               }}
-              className="mt-6 cursor-pointer bg-purple-500 text-white p-4 rounded-lg w-50 translate-y-2 hover:bg-purple-400 transition"
+              className="mt-6 md:text-lg cursor-pointer bg-purple-500 text-white p-4 rounded-lg w-50 translate-y-2 hover:bg-purple-400 transition"
             >
               ¡Siii me encantaría!🍓
             </motion.button>
